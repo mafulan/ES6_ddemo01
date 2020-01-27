@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 严格模式下，直接调用函数中this指向为undefine ,否则为windown -->
+    
+   <script>
+        'use strict';  // 如果支持strict模式代码将报ReferenceError错误:
+        abc = 'Hello, world';
+        alert(abc);  //如果不报错，说明你的浏览器需要升级
+   </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let azatsBooks = {  
+        books: ['React Quickly'],
+        get latest () {
+            let numberOfBooks = this.books.length;
+            if (numberOfBooks == 0) {return undefined;}
+            return this.books[numberOfBooks - 1]
+        }
+    }
+    console.log(Object.getOwnPropertyDescriptor(azatsBooks, 'books'));
+    console.log(Object.getOwnPropertyDescriptor(azatsBooks, 'latest'));
+    console.log(Object.getOwnPropertyDescriptors(azatsBooks));
+    </script>
+</body>
+</html>
